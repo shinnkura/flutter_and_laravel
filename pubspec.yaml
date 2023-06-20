@@ -34,7 +34,7 @@ dependencies:
   table_calendar: ^3.0.0
   lottie: ^1.1.0
   dio: ^4.0.0
-  rating_dialog: ^1.0.0
+  rating_dialog:
   shared_preferences: ^2.0.6
   provider: ^5.0.0
 
