@@ -73,7 +73,9 @@ class _LoginFormState extends State<LoginForm> {
           Button(
             width: double.infinity,
             title: 'サインイン',
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushNamed('main');
+            },
             disable: false,
           ),
           // Consumer<AuthModel>(
