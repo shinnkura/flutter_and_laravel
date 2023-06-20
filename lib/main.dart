@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_and_laravel/screens/auth_page.dart';
 import 'package:flutter_and_laravel/utils/config.dart';
 
 void main() {
