@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_and_laravel/screens/auth_page.dart';
 import 'package:flutter_and_laravel/utils/config.dart';
 
+import 'main_layout.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -43,8 +45,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const AuthPage(),
         'main': (context) => const MainLayout(),
-        'booking_page': (context) => BookingPage(),
-        'success_booking': (context) => const AppointmentBooked(),
+        // 'booking_page': (context) => BookingPage(),
+        // 'success_booking': (context) => const AppointmentBooked(),
       },
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
