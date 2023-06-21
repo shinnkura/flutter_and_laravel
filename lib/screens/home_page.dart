@@ -3,8 +3,10 @@
 // import 'package:doctor_appointment_app/models/auth_model.dart';
 // import 'package:doctor_appointment_app/utils/config.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_and_laravel/components/appointment_card.dart';
 import 'package:flutter_and_laravel/utils/config.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// import 'package:flutter_and_laravel/components/appointment_card.dart';
 // import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -29,7 +31,7 @@ class _HomePageState extends State<HomePage> {
     },
     {
       "icon": FontAwesomeIcons.code, // フロントを表すアイコン
-      "category": "JavaScript",
+      "category": "javaScript",
     },
     {
       "icon": FontAwesomeIcons.code, // PHPを表すアイコン
@@ -146,6 +148,10 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Config.spaceSmall,
+                AppointmentCard(
+                  color: Config.primaryColor,
+                  doctor: {},
+                ),
                 // doctor.isNotEmpty
                 //     ? AppointmentCard(
                 //         doctor: doctor,
