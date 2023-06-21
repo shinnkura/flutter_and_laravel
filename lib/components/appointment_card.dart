@@ -63,6 +63,10 @@ class _AppointmentCardState extends State<AppointmentCard> {
                   ),
                 ],
               ),
+              Config.spaceSmall,
+              ScheduleCard(
+                appointment: {},
+              ),
             ],
           ),
         ),
@@ -112,7 +116,8 @@ class ScheduleCard extends StatelessWidget {
           ),
           Flexible(
               child: Text(
-            appointment['time'],
+            // appointment['time'],
+            '10:00',
             style: const TextStyle(color: Colors.white),
           ))
         ],
