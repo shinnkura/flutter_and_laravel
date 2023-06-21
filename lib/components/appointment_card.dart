@@ -67,6 +67,45 @@ class _AppointmentCardState extends State<AppointmentCard> {
               ScheduleCard(
                 appointment: {},
               ),
+              Config.spaceSmall,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: ElevatedButton(
+                      style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.green),
+                      ),
+                      onPressed: () {},
+                      child: Text(
+                        'Contact',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  Expanded(
+                    child: ElevatedButton(
+                      style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.red),
+                      ),
+                      onPressed: () {},
+                      child: Text(
+                        'cancel',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
@@ -100,7 +139,8 @@ class ScheduleCard extends StatelessWidget {
             width: 5,
           ),
           Text(
-            '${appointment['day']}, ${appointment['date']}',
+            // '${appointment['day']}, ${appointment['date']}',
+            '水曜日 2021/10/10',
             style: const TextStyle(color: Colors.white),
           ),
           const SizedBox(
