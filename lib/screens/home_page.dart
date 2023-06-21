@@ -1,12 +1,9 @@
-// import 'package:doctor_appointment_app/components/appointment_card.dart';
-// import 'package:doctor_appointment_app/components/doctor_card.dart';
 // import 'package:doctor_appointment_app/models/auth_model.dart';
-// import 'package:doctor_appointment_app/utils/config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_and_laravel/components/appointment_card.dart';
+import 'package:flutter_and_laravel/components/teacher_card.dart';
 import 'package:flutter_and_laravel/utils/config.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-// import 'package:flutter_and_laravel/components/appointment_card.dart';
 // import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -151,6 +148,18 @@ class _HomePageState extends State<HomePage> {
                 AppointmentCard(
                   color: Config.primaryColor,
                   doctor: {},
+                ),
+                Config.spaceSmall,
+                const Text(
+                  'おすすめの先生',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Config.spaceSmall,
+                Column(
+                  children: List.generate(10, (index) => TeacherCard()),
                 ),
                 // doctor.isNotEmpty
                 //     ? AppointmentCard(
