@@ -48,7 +48,9 @@ class _TeacherDetailsState extends State<TeacherDetails> {
               child: Button(
                 width: double.infinity,
                 title: 'レッスンを予約する',
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed('booking_page');
+                },
                 disable: false,
               ),
             ),
