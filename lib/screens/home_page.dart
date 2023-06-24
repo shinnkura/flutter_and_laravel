@@ -159,7 +159,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Config.spaceSmall,
                 Column(
-                  children: List.generate(10, (index) => TeacherCard()),
+                  children: List.generate(10, (index) => TeacherCard(route: 'teacher_details',)),
                 ),
                 // doctor.isNotEmpty
                 //     ? AppointmentCard(

@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_and_laravel/utils/config.dart';
 
-class TeacherCard extends StatefulWidget {
-  const TeacherCard({super.key});
+class TeacherCard extends StatelessWidget {
+  const TeacherCard({super.key, required this.route});
 
-  @override
-  State<TeacherCard> createState() => _TeacherCardState();
-}
+  final String route;
 
-class _TeacherCardState extends State<TeacherCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -82,6 +79,7 @@ class _TeacherCardState extends State<TeacherCard> {
         ),
         onTap: () {
           // Navigator.pushNamed(context, '/teacher');
+          Navigator.of(context).pushNamed(route);
         },
       ),
     );

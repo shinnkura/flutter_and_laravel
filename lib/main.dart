@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_and_laravel/screens/auth_page.dart';
+import 'package:flutter_and_laravel/screens/teacher_details.dart';
 import 'package:flutter_and_laravel/utils/config.dart';
 
 import 'main_layout.dart';
@@ -45,6 +46,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const AuthPage(),
         'main': (context) => const MainLayout(),
+        'teacher_details': (context) => const TeacherDetails(),
         // 'booking_page': (context) => BookingPage(),
         // 'success_booking': (context) => const AppointmentBooked(),
       },
